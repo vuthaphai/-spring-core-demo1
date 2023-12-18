@@ -5,9 +5,11 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.ComponentScan;
+import org.springframework.context.annotation.ImportResource;
 
 @SpringBootApplication
-@ComponentScan("com.vp.learning.springcoredemo")
+//@ComponentScan("com.vp.learning.springcoredemo")
+@ImportResource("classpath:/spring/spring-config.xml")
 public class SpringCoreDemoApplication {
 
 	public static void main(String[] args) {
